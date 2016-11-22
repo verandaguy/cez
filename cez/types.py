@@ -1,6 +1,6 @@
 """ CEZ - Types
 
-This module contains the classes for creating C types from primative
+This module contains the classes for creating C types from primitive
 types.  Some of the basic
 
 """
@@ -10,7 +10,7 @@ import re
 
 CTYPE_NAME=r"[a-zA-Z_][a-zA-Z0-9_]*"
 
-class PrimativeType(object):
+class PrimitiveType(object):
     def __init__(self, name: str):
         self._name = name
 
@@ -106,8 +106,8 @@ class BitField(object):
 
 
 def main(*argv):
-    usint = PrimativeType("unsigned int")
-    charPtr = PrimativeType("char *")
+    usint = PrimitiveType("unsigned int")
+    charPtr = PrimitiveType("char *")
 
     name = charPtr.declair("name")
     age = usint.declair("age")

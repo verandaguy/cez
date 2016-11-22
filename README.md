@@ -7,8 +7,8 @@ A Python library for templating/auto-generating C code.
 ```python
 from cez import types
 
-usint = types.PrimativeType("unsigned int")
-charPtr = types.PrimativeType("char *")
+usint = types.PrimitiveType("unsigned int")
+charPtr = types.PrimitiveType("char *")
 
 name = charPtr.declair("name")
 age = usint.declair("age")
